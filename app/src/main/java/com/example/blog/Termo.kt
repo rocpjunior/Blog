@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 
 
@@ -22,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [Termo.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Termo : Fragment() {
+class Termo : DialogFragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -53,12 +54,12 @@ class Termo : Fragment() {
         }
 
             ok.setOnClickListener {
-                //dismiss()
-
+                dismiss()
+                //Toast.makeText(this, "Você aceitou os termos de uso da aplicação", Toast.LENGTH_SHORT).show()
             }
 
             cancelar.setOnClickListener{
-                requireActivity().finish()
+                dismiss()
             }
 
         builder.setView(view)
