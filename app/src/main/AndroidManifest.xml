@@ -12,6 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Blog">
         <activity
+            android:name=".EsqueciSenha"
+            android:exported="false" />
+        <activity
+            android:name=".FazerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Escrever"
+            android:exported="false" />
+        <activity
+            android:name=".Procurar"
+            android:exported="false" />
+        <activity
+            android:name=".Favoritos"
+            android:exported="false" />
+        <activity
+            android:name=".Notificacoes"
+            android:exported="false" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +50,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
