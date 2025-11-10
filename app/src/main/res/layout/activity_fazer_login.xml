@@ -11,6 +11,9 @@
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -18,8 +21,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_flex"
-            android:hint="DIGITE O SEU E-MAIL" />
+            android:fontFamily="sans-serif"
+            android:hint="Digite o seu E-Mail"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -27,6 +31,9 @@
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginBottom="128dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -34,7 +41,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DIGITE A SUA SENHA" />
+            android:hint="Digite a sua Senha"
+            android:inputType="text|textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -79,10 +87,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_flex"
+        android:fontFamily="sans-serif"
         android:text="FAZER LOGIN"
         android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Não se lembra da sua senha?"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEsqueciSenha" />
 </androidx.constraintlayout.widget.ConstraintLayout>

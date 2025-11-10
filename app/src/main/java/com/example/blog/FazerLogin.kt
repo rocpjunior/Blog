@@ -26,11 +26,11 @@ class FazerLogin : AppCompatActivity() {
 
     fun telaLogin (view: View) {
         val intent = Intent(this, Login::class.java)
-        finish()
+        startActivity(intent)
     }
 
     fun telaInicio (view: View) {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, Inicio::class.java)
         startActivity(intent)
     }
 

@@ -15,9 +15,11 @@ class Login : AppCompatActivity() {
 
         val botaoCriarCadastro = findViewById<Button>(R.id.btnCriarCadastro)
         val botaoFazerLogin = findViewById<Button>(R.id.btnFazerLogin)
+        val botaoTermos = findViewById<Button>(R.id.btnTermos)
 
         botaoCriarCadastro.setOnClickListener(this::telaCriarCadastro)
         botaoFazerLogin.setOnClickListener(this::telaFazerLogin)
+        botaoTermos.setOnClickListener(this::janelaTermos)
     }
 
     fun telaCriarCadastro (view: View) {
@@ -28,5 +30,10 @@ class Login : AppCompatActivity() {
     fun telaFazerLogin (view: View) {
         val intent = Intent(this, FazerLogin::class.java)
         startActivity(intent)
+    }
+
+    fun janelaTermos (view: View) {
+        val fragmento = Termo()
+        fragmento.show(supportFragmentManager, "AlertFragmento")
     }
 }

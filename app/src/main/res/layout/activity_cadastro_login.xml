@@ -12,10 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_flex"
+        android:fontFamily="sans-serif"
         android:text="CADASTRO DE PERFIL"
-        android:textColor="#000000"
         android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,15 +26,19 @@
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:textColorHint="#D9D9D9"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edNomeCompleto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_flex"
-            android:hint="NOME COMPLETO" />
+            android:hint="Nome Completo" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -43,15 +47,19 @@
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:textColorHint="#D9D9D9"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_flex"
-            android:hint="E-MAIL"
+            android:hint="E-Mail"
             android:textColor="#D9D9D9" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,15 +69,19 @@
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:textColorHint="#D9D9D9"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edDataNascimento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_flex"
-            android:hint="DATA DE NASCIMENTO"
+            android:hint="Data de Nascimento"
             android:textColor="#D9D9D9" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,15 +91,19 @@
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:textColorHint="#D9D9D9"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edGenero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_flex"
-            android:hint="GÊNERO"
+            android:hint="Gênero"
             android:textColor="#D9D9D9" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,15 +113,19 @@
         android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:textColorHint="#D9D9D9"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_flex"
-            android:hint="SENHA"
+            android:hint="Senha"
             android:textColor="#D9D9D9" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -116,15 +136,19 @@
         android:layout_height="55dp"
         android:layout_marginBottom="24dp"
         android:textColorHint="#D9D9D9"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:helperTextTextColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnCriarNovoCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edSenhaDenovo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_flex"
-            android:hint="REPETIR SENHA"
+            android:hint="Repita sua senha"
             android:textColor="#D9D9D9" />
     </com.google.android.material.textfield.TextInputLayout>
 
